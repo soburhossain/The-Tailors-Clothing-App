@@ -20,7 +20,7 @@ export default function Signup() {
     try {
       setIsSignUpLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/api/customer/signup",
+        "https://tailorbackend-0ycq.onrender.com/api/customer/signup",
         signupData
       );
       setIsSignUpLoading(false);

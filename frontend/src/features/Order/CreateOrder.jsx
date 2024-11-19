@@ -23,7 +23,7 @@ export default function CreateOrder() {
     try {
       const orderData = { ...result, customerInfo: formData }; // Ensure the customer info is added to the order
       const response = await axios.post(
-        "http://localhost:8000/api/customer/order",
+        "https://tailorbackend-0ycq.onrender.com/api/customer/order",
         orderData
       );
       console.log("Order posted:", response.data);

@@ -8,7 +8,7 @@ const CustomerProvider = ({ children }) => {
     const fetchOrders = async () => {
       try {
         const result = await axios.get(
-          "http://localhost:8000/api/customer/orders"
+          "https://tailorbackend-0ycq.onrender.com/api/customer/orders"
         );
         setOrders(result.data);
       } catch (error) {

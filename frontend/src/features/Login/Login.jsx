@@ -17,7 +17,7 @@ export default function Login() {
     try {
       setLogInIsLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/api/customer/login",
+        "https://tailorbackend-0ycq.onrender.com/api/customer/login",
         loginFormData
       );
       const { token, msg } = response.data;
